@@ -27,6 +27,26 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
   reactProductionProfiling: false,
+  modularizeImports: {
+    '@heroicons/react/24/outline': {
+      transform: '@heroicons/react/24/outline/{{member}}',
+    },
+    '@heroicons/react/24/solid': {
+      transform: '@heroicons/react/24/solid/{{member}}',
+    },
+    'date-fns': {
+      transform: 'date-fns/{{member}}',
+    },
+  },
+  experimental: {
+    optimizePackageImports: [
+      '@heroicons/react',
+      'date-fns',
+      '@tanstack/react-query',
+      'react-hook-form',
+      'zod',
+    ],
+  },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
     NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL,

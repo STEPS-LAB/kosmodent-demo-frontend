@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
-import { api } from '@/services/api';
+import { publicApi } from '@/services/publicApi';
 
 interface Doctor {
   _id: string;
@@ -21,7 +21,7 @@ export function DoctorsSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    api.getDoctors({ isActive: 'true' }).then((data: any[]) => {
+    publicApi.getDoctors({ isActive: 'true' }).then((data: any[]) => {
       setDoctors(data.slice(0, 4));
       setLoading(false);
     });

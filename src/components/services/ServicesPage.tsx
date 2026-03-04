@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useLayoutEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { api } from '@/services/api';
+import { api } from '@/services/publicApi';
 
 interface Service {
   _id: string;

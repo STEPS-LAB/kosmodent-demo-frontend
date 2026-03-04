@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { api } from '@/services/api';
+import { api } from '@/services/publicApi';
 import { useBookingStore } from '@/stores/bookingStore';
 
 const bookingSchema = z.object({

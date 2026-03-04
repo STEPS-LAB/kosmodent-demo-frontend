@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { StarIcon } from '@heroicons/react/24/solid';
-import { api } from '@/services/api';
+import { publicApi } from '@/services/publicApi';
 
 interface Review {
   _id: string;
@@ -34,8 +34,8 @@ export function ReviewsSection() {
     const loadData = async () => {
       try {
         const [reviewsData, statsData] = await Promise.all([
-          api.getReviews({ isActive: 'true' }),
-          api.getReviewStatistics(),
+          publicApi.getReviews({ isActive: 'true' }),
+          publicApi.getReviewStatistics(),
         ]);
 
         setReviews(Array.isArray(reviewsData) ? reviewsData.slice(0, 3) : []);

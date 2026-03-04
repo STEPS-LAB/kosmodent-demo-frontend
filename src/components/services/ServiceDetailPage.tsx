@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { api } from '@/services/api';
+import { api } from '@/services/publicApi';
 
 interface Service {
   _id: string;

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
-import { api } from '@/services/api';
+import { publicApi } from '@/services/publicApi';
 
 interface Service {
   _id: string;
@@ -52,7 +52,7 @@ export function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    api.getServices({ isActive: 'true' }).then((data) => {
+    publicApi.getServices({ isActive: 'true' }).then((data) => {
       setServices(data.slice(0, 6));
       setLoading(false);
     });

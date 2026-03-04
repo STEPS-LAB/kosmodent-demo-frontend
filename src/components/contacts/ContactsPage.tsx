@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
-import { api } from '@/services/api';
+import { api } from '@/services/publicApi';
 
 interface ContactInfo {
   clinicName: string;

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { StarIcon } from '@heroicons/react/24/solid';
-import { api } from '@/services/api';
+import { api } from '@/services/publicApi';
 
 interface Review {
   _id: string;
