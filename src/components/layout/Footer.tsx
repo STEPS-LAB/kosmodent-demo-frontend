@@ -55,17 +55,28 @@ export function Footer() {
             </p>
 
             {/* Social links */}
-            <div className="flex gap-2 sm:gap-3">
-              {['facebook', 'instagram', 'twitter'].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-9 h-9 sm:w-10 sm:h-10 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl flex items-center justify-center text-white/70 sm:hover:text-primary-400 sm:hover:bg-primary-500/20 sm:hover:border-primary-500/30 transition-all duration-300 sm:hover:-translate-y-1"
-                  aria-label={social}
-                >
-                  <span className="text-xs font-semibold uppercase">{social.charAt(0)}</span>
-                </a>
-              ))}
+            <div className="flex flex-col gap-3">
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 text-white/70 sm:hover:text-primary-400 transition-all duration-300"
+                aria-label="Facebook"
+              >
+                <span className="text-sm font-medium">Facebook</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 text-white/70 sm:hover:text-primary-400 transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <span className="text-sm font-medium">Instagram</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 text-white/70 sm:hover:text-primary-400 transition-all duration-300"
+                aria-label="Twitter"
+              >
+                <span className="text-sm font-medium">Twitter</span>
+              </a>
             </div>
           </div>
 
