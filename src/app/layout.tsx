@@ -8,6 +8,9 @@ import { Footer } from '@/components/layout/Footer';
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial', 'sans-serif'],
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -28,6 +31,16 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#1e293b' },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +48,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={inter.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/logo.png"
+          as="image"
+          type="image/png"
+        />
+      </head>
+      <body className={`${inter.className} antialiased`}>
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Header />

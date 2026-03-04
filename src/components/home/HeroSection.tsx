@@ -34,7 +34,7 @@ export function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
             </span>
-            <span className="text-xs sm:text-sm font-medium text-primary-700">Провідна стоматологічна клініка</span>
+            <span className="text-xs sm:text-sm font-medium text-primary-900">Провідна стоматологічна клініка</span>
           </div>
 
           {/* Main heading */}

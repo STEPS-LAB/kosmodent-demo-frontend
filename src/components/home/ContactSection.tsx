@@ -50,7 +50,7 @@ export function ContactSection() {
           {/* Contact Info */}
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-primary-50 border border-primary-200 rounded-full mb-6 animate-fade-in-up">
-              <span className="text-xs sm:text-sm font-semibold text-primary-700 uppercase tracking-wide">Контакти</span>
+              <span className="text-xs sm:text-sm font-semibold text-primary-900 uppercase tracking-wide">Контакти</span>
             </div>
             <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Зв&apos;яжіться з нами</h2>
             <p className="section-subtitle text-base sm:text-xl md:text-2xl mb-8 sm:mb-10">

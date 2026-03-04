@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { PhoneIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 const services = [
@@ -35,10 +36,14 @@ export function Footer() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full blur-lg opacity-50 sm:group-hover:opacity-75 transition-opacity duration-300" />
                 <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center sm:group-hover:scale-105 transition-all duration-300">
-                  <img
+                  <Image
                     src="/logo.png"
                     alt="КОСМОДЕНТ"
+                    width={48}
+                    height={48}
                     className="w-full h-full object-contain"
+                    sizes="48px"
+                    quality={85}
                   />
                 </div>
               </div>

@@ -61,7 +61,7 @@ export function DoctorsSection() {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-primary-50 border border-primary-200 rounded-full mb-6 animate-fade-in-up">
-            <span className="text-xs sm:text-sm font-semibold text-primary-700 uppercase tracking-wide">Наші лікарі</span>
+            <span className="text-xs sm:text-sm font-semibold text-primary-900 uppercase tracking-wide">Наші лікарі</span>
           </div>
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">Команда професіоналів</h2>
           <p className="section-subtitle text-base sm:text-xl md:text-2xl text-center mx-auto max-w-2xl sm:max-w-3xl">
@@ -122,7 +122,7 @@ export function DoctorsSection() {
                       {doctor.specialization.slice(0, 2).map((spec) => (
                         <span
                           key={spec}
-                          className="text-xs px-2 py-1 sm:px-3 sm:py-1.5 bg-gradient-to-r from-secondary-100 to-secondary-50 text-secondary-600 rounded-full font-medium border border-secondary-200 sm:group-hover:border-primary-300 sm:group-hover:bg-primary-50 sm:group-hover:text-primary-700 transition-all duration-300"
+                          className="text-xs px-2 py-1 sm:px-3 sm:py-1.5 bg-gradient-to-r from-secondary-100 to-secondary-50 text-secondary-600 rounded-full font-medium border border-secondary-200 sm:group-hover:border-primary-300 sm:group-hover:bg-primary-50 sm:group-hover:text-primary-900 transition-all duration-300"
                         >
                           {spec}
                         </span>

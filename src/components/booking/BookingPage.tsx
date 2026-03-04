@@ -272,7 +272,7 @@ export function BookingPage() {
                             ? 'bg-secondary-100 text-secondary-400 cursor-not-allowed'
                             : watch('timeSlot') === slot.timeSlot
                             ? 'bg-primary-600 text-white'
-                            : 'bg-primary-50 text-primary-700 hover:bg-primary-100'
+                            : 'bg-primary-50 text-primary-900 hover:bg-primary-100'
                         }`}
                       >
                         {slot.timeSlot}

@@ -75,7 +75,7 @@ export function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               {service.category && (
-                <span className="text-sm px-3 py-1 bg-primary-50 text-primary-700 rounded-full">
+                <span className="text-sm px-3 py-1 bg-primary-50 text-primary-900 rounded-full">
                   {service.category}
                 </span>
               )}
